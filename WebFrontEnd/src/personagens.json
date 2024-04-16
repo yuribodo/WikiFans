@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "name": "Yuno Grinberryall",
+        "age": 17,
+        "quote": "I won't stop. I won't move. I won't give up!!!!",
+        "personality": ["determined", "reserved", "loyal"]
+    },
+    {
+        "id": 2,
+        "name": "William Vangeance",
+        "age": 29,
+        "quote": "To achieve my ideals, I'm willing to sacrifice anything.",
+        "personality": ["calm", "calculating", "altruistic"]
+    },
+    {
+        "id": 3,
+        "name": "Asta",
+        "age": 17,
+        "quote": "I will become the Wizard King!",
+        "personality": ["energetic", "determined", "optimistic"]
+    },
+    {
+        "id": 4,
+        "name": "Luck Voltia",
+        "age": 18,
+        "quote": "Let's have some fun!",
+        "personality": ["eccentric", "competitive", "loyal"]
+    },
+    {
+        "id": 5,
+        "name": "Yami Sukehiro",
+        "age": 28,
+        "quote": "Damn, damn, damn!",
+        "personality": ["rude", "straightforward", "protective"]
+    },
+    {
+        "id": 6,
+        "name": "Julius Novachrono",
+        "age": "Unknown",
+        "quote": "The future is yet to be decided!",
+        "personality": ["wise", "compassionate", "visionary"]
+    },
+    {
+        "id": 7,
+        "name": "Noelle Silva",
+        "age": 18,
+        "quote": "I will prove my worth!",
+        "personality": ["proud", "determined", "careful"]
+    },
+    {
+        "id": 8,
+        "name": "Magna Swing",
+        "age": 20,
+        "quote": "Ignite!",
+        "personality": ["bold", "passionate", "loyal"]
+    },
+    {
+        "id": 9,
+        "name": "Secre Swallowtail",
+        "age": "Unknown",
+        "quote": "I will keep this secret with me.",
+        "personality": ["mysterious", "devoted", "protective"]
+    },
+    {
+        "id": 10,
+        "name": "Fuegoleon Vermillion",
+        "age": 26,
+        "quote": "The flame of will burns brighter than any other.",
+        "personality": ["honorable", "determined", "charismatic"]
+    },
+    {
+        "id": 11,
+        "name": "Mimosa Vermillion",
+        "age": 18,
+        "quote": "The beauty of nature is a blessing.",
+        "personality": ["gentle", "optimistic", "careful"]
+    }
+]
