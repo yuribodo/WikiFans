@@ -11,7 +11,7 @@ function App() {
         <h1 className="flex justify-center mt-10 text-white text-3xl font-mono">Personagens Black Clover</h1>
         <div className="flex flex-wrap justify-center">
           {Personagens.map(personagem => (
-            <Link  to={`WikiFans/personagem/${personagem.name}`}>
+            <Link  to={`personagem/${personagem.name}`}>
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ rotate: 360, scale: 1 }}
