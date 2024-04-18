@@ -14,7 +14,15 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
+    path: "WikiFans/",
+    element: <App />,
+  },
+  {
     path: 'https://yuribodo.github.io/WikiFans/personagem/:name',
+    element: <DetalhesPersonagem />
+  },
+  {
+    path: 'WikiFans/personagem/:name',
     element: <DetalhesPersonagem />
   }
 ]);
