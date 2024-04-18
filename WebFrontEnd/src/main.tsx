@@ -6,16 +6,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import Personagens from '../src/personagens.json'
 import DetalhesPersonagem from './DetalhesPersonagem.tsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "https://yuribodo.github.io/WikiFans/",
     element: <App />,
   },
   {
-    path: '/personagem',
+    path: 'https://yuribodo.github.io/WikiFans/personagem/:name',
     element: <DetalhesPersonagem />
   }
 ]);
