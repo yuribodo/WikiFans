@@ -1,0 +1,3 @@
+use o "yarn dev" para começar o projeto
+
+e o "yarn prisma studio" para ver as Tabelas
