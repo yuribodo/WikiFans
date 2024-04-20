@@ -1,17 +1,50 @@
-import React from 'react'
-import Personagens from './personagens.json';
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import {motion} from 'framer-motion'
+import api from './api/personagens';
 
 
 const DetalhesPersonagem = () => {
+
+  interface Character {
+    id: number;
+    name: string;
+    age: number;
+    quote: string;
+    personality: string
+  }
+
+  const [personages, setPersonagens] = useState<Character[]>([]); // Specify the type as Character[]
+
+  useEffect(() => {
+    const fetchPersonagens = async () => {
+      try {
+        const response = await api.get('/');
+        
+        setPersonagens(response.data);
+      } catch (err) {
+        if (err.response) {
+          // Not in the 200 response range
+        console.log(err.response.data)
+        console.log(err.response.status)
+        console.log(err.response.headers)
+        } else {
+          console.log(`Error: ${err.message}`);
+        }
+        
+      }
+    }
+
+    fetchPersonagens()
+  }, [])
+
   const params = useParams()
-  const personagem= Personagens.find((personagem) => {
+  const personagem= personages.find((personagem) => {
     return personagem.name === params.name
   })
   console.log(personagem)
 
-  const personalityString = personagem?.personality?.join(', ');
+  
 
   return (
 
@@ -34,7 +67,7 @@ const DetalhesPersonagem = () => {
     >
       <p className='text-white text-2xl mb-6 '> Age: {personagem?.age} </p>
       <p className='text-white text-2xl italic mb-6'> Favorite Quote: {personagem?.quote}</p>
-      <p className=' text-white text-2xl mb-6'>Personalidade: {personalityString}</p>
+      <p className=' text-white text-2xl mb-6'>Personalidade: {personagem?.personality}</p>
     </motion.div>
       
     </div>
